@@ -40,6 +40,7 @@ RUN mkdir -p /etc/mysql/conf.d \
 		echo '[mysqld]'; \
 		echo 'skip-host-cache'; \
 		echo 'skip-name-resolve'; \
+		echo 'lower_case_table_names=1'; \
 		echo 'user = mysql'; \
 		echo 'datadir = /var/lib/mysql'; \
 		echo '!includedir /etc/mysql/conf.d/'; \
